@@ -1,0 +1,26 @@
+﻿@model Route_Yonlendirme.Models.userTablo
+@{
+    ViewBag.Title = "UserDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <br />
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>ID</td>
+            <td>@Model.id</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>@Model.firstname</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>@Model.lastname</td>
+        </tr>
+        <tr>
+            <td>Birth Date</td>
+            <td>@Model.birthdate</td>
+        </tr>
+    </table>
+</div>

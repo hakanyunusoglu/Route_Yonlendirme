@@ -1,0 +1,30 @@
+﻿@model Route_Yonlendirme.Models.userTablo
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label for="firstname">First Name</label>
+        <div class="col-md-4">
+            @Html.TextBoxFor(x => x.firstname, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <div class="col-md-4">
+            @Html.TextBoxFor(x => x.lastname, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Birth Date</label>
+        <div class="col-md-4">
+            @Html.TextBoxFor(x => x.birthdate, new { @class = "form-control" })
+            <p>Example: 01.01.2022</p>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+}
+
